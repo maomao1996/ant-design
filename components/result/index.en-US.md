@@ -23,6 +23,7 @@ Use when important operations need to inform the user to process the results and
 <code src="./demo/500.tsx">500</code>
 <code src="./demo/error.tsx">Error</code>
 <code src="./demo/customIcon.tsx">Custom icon</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>
 
 ## API
 
@@ -33,3 +34,7 @@ Use when important operations need to inform the user to process the results and
 | status | Result status, decide icons and colors | `success` \| `error` \| `info` \| `warning` \| `404` \| `403` \| `500` | `info` |
 | subTitle | The subTitle | ReactNode | - |
 | title | The title | ReactNode | - |
+
+## Design Token
+
+<ComponentTokenTable component="Result"></ComponentTokenTable>

@@ -5,10 +5,12 @@ import {
   parentSelectorLinter,
   StyleProvider,
 } from '@ant-design/cssinjs';
-import { ConfigProvider, theme as antdTheme, App } from 'antd';
+import { App, theme as antdTheme } from 'antd';
 import type { DirectionType } from 'antd/es/config-provider';
 import { createSearchParams, useOutlet, useSearchParams } from 'dumi';
-import React, { startTransition, useCallback, useEffect, useMemo } from 'react';
+import React, { useCallback, useEffect, useMemo } from 'react';
+import useLayoutState from '../../hooks/useLayoutState';
+import SiteThemeProvider from '../SiteThemeProvider';
 import useLocation from '../../hooks/useLocation';
 import type { ThemeName } from '../common/ThemeSwitch';
 import ThemeSwitch from '../common/ThemeSwitch';
@@ -40,10 +42,10 @@ const GlobalLayout: React.FC = () => {
   const outlet = useOutlet();
   const { pathname } = useLocation();
   const [searchParams, setSearchParams] = useSearchParams();
-  const [{ theme, direction, isMobile }, setSiteState] = React.useState<SiteState>({
+  const [{ theme = [], direction, isMobile }, setSiteState] = useLayoutState<SiteState>({
     isMobile: false,
     direction: 'ltr',
-    theme: ['light'],
+    theme: ['light', 'motion-off'],
   });
 
   const updateSiteConfig = useCallback(
@@ -85,11 +87,9 @@ const GlobalLayout: React.FC = () => {
     const _theme = searchParams.getAll('theme') as ThemeName[];
     const _direction = searchParams.get('direction') as DirectionType;
 
-    startTransition(() => {
-      setSiteState({ theme: _theme, direction: _direction === 'rtl' ? 'rtl' : 'ltr' });
-      // Handle isMobile
-      updateMobileMode();
-    });
+    setSiteState({ theme: _theme, direction: _direction === 'rtl' ? 'rtl' : 'ltr' });
+    // Handle isMobile
+    updateMobileMode();
 
     window.addEventListener('resize', updateMobileMode);
     return () => {
@@ -113,9 +113,12 @@ const GlobalLayout: React.FC = () => {
       linters={[logicalPropertiesLinter, legacyNotSelectorLinter, parentSelectorLinter]}
     >
       <SiteContext.Provider value={siteContextValue}>
-        <ConfigProvider
+        <SiteThemeProvider
           theme={{
             algorithm: getAlgorithm(theme),
+            token: {
+              motion: !theme.includes('motion-off'),
+            },
           }}
         >
           <App>
@@ -127,7 +130,7 @@ const GlobalLayout: React.FC = () => {
               />
             )}
           </App>
-        </ConfigProvider>
+        </SiteThemeProvider>
       </SiteContext.Provider>
     </StyleProvider>
   );

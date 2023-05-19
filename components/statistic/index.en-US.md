@@ -23,6 +23,7 @@ Display statistic number.
 <code src="./demo/animated.tsx">Animated number</code>
 <code src="./demo/card.tsx" background="grey">In Card</code>
 <code src="./demo/countdown.tsx">Countdown</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>
 
 ## API
 
@@ -53,3 +54,7 @@ Display statistic number.
 | valueStyle | Set value section style | CSSProperties | - |  |
 | onFinish | Trigger when time's up | () => void | - |  |
 | onChange | Trigger when time's changing | (value: number) => void | - | 4.16.0 |
+
+## Design Token
+
+<ComponentTokenTable component="Statistic"></ComponentTokenTable>

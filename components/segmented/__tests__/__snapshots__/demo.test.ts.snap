@@ -330,7 +330,7 @@ exports[`renders components/segmented/demo/custom.tsx correctly 1`] = `
                 class="ant-avatar ant-avatar-circle ant-avatar-image"
               >
                 <img
-                  src="https://joesch.moe/api/v1/random"
+                  src="https://xsgames.co/randomusers/avatar.php?g=pixel"
                 />
               </span>
               <div>
@@ -1292,6 +1292,7 @@ exports[`renders components/segmented/demo/size-consistent.tsx correctly 1`] = `
               aria-activedescendant="undefined_list_0"
               aria-autocomplete="list"
               aria-controls="undefined_list"
+              aria-expanded="false"
               aria-haspopup="listbox"
               aria-owns="undefined_list"
               autocomplete="off"

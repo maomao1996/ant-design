@@ -610,6 +610,10 @@ const genAffixStyle: GenerateStyle<InputToken> = (token: InputToken) => {
         borderRadius: 0,
         outline: 'none',
 
+        '&::-ms-reveal': {
+          display: 'none',
+        },
+
         '&:focus': {
           boxShadow: 'none !important',
         },
@@ -720,6 +724,29 @@ const genGroupStyle: GenerateStyle<InputToken> = (token: InputToken) => {
         '&-disabled': {
           [`${componentCls}-group-addon`]: {
             ...genDisabledStyle(token),
+          },
+        },
+
+        // Fix the issue of using icons in Space Compact mode
+        // https://github.com/ant-design/ant-design/issues/42122
+        [`&:not(${componentCls}-compact-first-item):not(${componentCls}-compact-last-item)${componentCls}-compact-item`]:
+          {
+            [`${componentCls}, ${componentCls}-group-addon`]: {
+              borderRadius: 0,
+            },
+          },
+
+        [`&:not(${componentCls}-compact-last-item)${componentCls}-compact-first-item`]: {
+          [`${componentCls}, ${componentCls}-group-addon`]: {
+            borderStartEndRadius: 0,
+            borderEndEndRadius: 0,
+          },
+        },
+
+        [`&:not(${componentCls}-compact-first-item)${componentCls}-compact-last-item`]: {
+          [`${componentCls}, ${componentCls}-group-addon`]: {
+            borderStartStartRadius: 0,
+            borderEndStartRadius: 0,
           },
         },
       },
@@ -881,17 +908,18 @@ const genTextAreaStyle: GenerateStyle<InputToken> = (token) => {
         },
 
         [`${componentCls}-data-count`]: {
+          position: 'absolute',
+          bottom: -token.fontSize * token.lineHeight,
+          insetInlineEnd: 0,
           color: token.colorTextDescription,
           whiteSpace: 'nowrap',
           pointerEvents: 'none',
-          float: 'right',
-          marginBottom: -token.fontSize * token.lineHeight,
         },
+      },
 
-        '&-rtl': {
-          [`${componentCls}-data-count`]: {
-            float: 'left',
-          },
+      '&-allow-clear': {
+        [`> ${componentCls}`]: {
+          paddingInlineEnd: paddingLG,
         },
       },
 

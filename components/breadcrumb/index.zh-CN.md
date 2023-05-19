@@ -41,7 +41,7 @@ return <Breadcrumb routes={[{ breadcrumbName: 'sample' }]} />;
 <code src="./demo/react-router.tsx" iframe="200">react-router V6</code>
 <code src="./demo/separator.tsx">分隔符</code>
 <code src="./demo/overlay.tsx">带下拉菜单的面包屑</code>
-<code src="./demo/separator-component.tsx">分隔符</code>
+<code src="./demo/separator-component.tsx">独立的分隔符</code>
 <code src="./demo/debug-routes.tsx">Debug Routes</code>
 
 ## API
@@ -65,7 +65,8 @@ return <Breadcrumb routes={[{ breadcrumbName: 'sample' }]} />;
 | --- | --- | --- | --- | --- |
 | className | 自定义类名 | string | - |  |
 | dropdownProps | 弹出下拉菜单的自定义配置 | [Dropdown](/components/dropdown-cn) | - |  |
-| href | 链接的目的地 | string | - |  |
+| href | 链接的目的地，不能和 `path` 共用 | string | - |  |
+| path | 拼接路径，每一层都会拼接前一个 `path` 信息。不能和 `href` 共用 | string | - |  |
 | menu | 菜单配置项 | [MenuProps](/components/menu-cn/#api) | - | 4.24.0 |
 | onClick | 单击事件 | (e:MouseEvent) => void | - |  |
 | title | 名称 | ReactNode | - | 5.3.0 |
@@ -126,3 +127,7 @@ function itemRender(item, params, items, paths) {
 
 return <Breadcrumb itemRender={itemRender} items={items} />;
 ```
+
+## Design Token
+
+<ComponentTokenTable component="Breadcrumb"></ComponentTokenTable>

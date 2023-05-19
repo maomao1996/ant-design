@@ -330,7 +330,7 @@ exports[`renders components/segmented/demo/custom.tsx extend context correctly 1
                 class="ant-avatar ant-avatar-circle ant-avatar-image"
               >
                 <img
-                  src="https://joesch.moe/api/v1/random"
+                  src="https://xsgames.co/randomusers/avatar.php?g=pixel"
                 />
               </span>
               <div>
@@ -1292,6 +1292,7 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
               aria-activedescendant="rc_select_TEST_OR_SSR_list_0"
               aria-autocomplete="list"
               aria-controls="rc_select_TEST_OR_SSR_list"
+              aria-expanded="false"
               aria-haspopup="listbox"
               aria-owns="rc_select_TEST_OR_SSR_list"
               autocomplete="off"
@@ -1314,7 +1315,7 @@ exports[`renders components/segmented/demo/size-consistent.tsx extend context co
         </div>
         <div
           class="ant-select-dropdown ant-slide-up-appear ant-slide-up-appear-prepare ant-slide-up ant-select-dropdown-placement-bottomLeft"
-          style="left: -1000vw; top: -1000vh; box-sizing: border-box;"
+          style="--arrow-x: 0px; --arrow-y: 0px; left: -1000vw; top: -1000vh; box-sizing: border-box;"
         >
           <div>
             <div

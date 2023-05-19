@@ -415,7 +415,7 @@ Array [
       class="ant-avatar ant-avatar-circle ant-avatar-image"
     >
       <img
-        src="https://joesch.moe/api/v1/random?key=1"
+        src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=1"
       />
     </span>
     <a
@@ -459,7 +459,7 @@ Array [
     </span>
     <span
       class="ant-avatar ant-avatar-circle ant-avatar-icon"
-      style="background-color:#1890ff"
+      style="background-color:#1677ff"
     >
       <span
         aria-label="ant-design"
@@ -493,7 +493,7 @@ Array [
       class="ant-avatar ant-avatar-circle ant-avatar-image"
     >
       <img
-        src="https://joesch.moe/api/v1/random?key=2"
+        src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=2"
       />
     </span>
     <span
@@ -530,7 +530,7 @@ Array [
       class="ant-avatar ant-avatar-lg ant-avatar-circle ant-avatar-image"
     >
       <img
-        src="https://joesch.moe/api/v1/random?key=3"
+        src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=3"
       />
     </span>
     <span

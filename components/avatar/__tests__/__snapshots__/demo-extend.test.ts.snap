@@ -415,7 +415,7 @@ Array [
       class="ant-avatar ant-avatar-circle ant-avatar-image"
     >
       <img
-        src="https://joesch.moe/api/v1/random?key=1"
+        src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=1"
       />
     </span>
     <a
@@ -459,7 +459,7 @@ Array [
     </span>
     <div
       class="ant-tooltip ant-zoom-big-fast-appear ant-zoom-big-fast-appear-prepare ant-zoom-big-fast ant-tooltip-placement-top"
-      style="left: -1000vw; top: -1000vh; box-sizing: border-box;"
+      style="--arrow-x: 0px; --arrow-y: 0px; left: -1000vw; top: -1000vh; box-sizing: border-box;"
     >
       <div
         class="ant-tooltip-arrow"
@@ -478,7 +478,7 @@ Array [
     </div>
     <span
       class="ant-avatar ant-avatar-circle ant-avatar-icon"
-      style="background-color: rgb(24, 144, 255);"
+      style="background-color: rgb(22, 119, 255);"
     >
       <span
         aria-label="ant-design"
@@ -512,7 +512,7 @@ Array [
       class="ant-avatar ant-avatar-circle ant-avatar-image"
     >
       <img
-        src="https://joesch.moe/api/v1/random?key=2"
+        src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=2"
       />
     </span>
     <span
@@ -539,7 +539,7 @@ Array [
     </span>
     <div
       class="ant-popover ant-zoom-big-appear ant-zoom-big-appear-prepare ant-zoom-big ant-avatar-group-popover ant-popover-placement-top"
-      style="left: -1000vw; top: -1000vh; box-sizing: border-box;"
+      style="--arrow-x: 0px; --arrow-y: 0px; left: -1000vw; top: -1000vh; box-sizing: border-box;"
     >
       <div
         class="ant-popover-arrow"
@@ -581,7 +581,7 @@ Array [
             </span>
             <div
               class="ant-tooltip ant-zoom-big-fast-appear ant-zoom-big-fast-appear-prepare ant-zoom-big-fast ant-tooltip-placement-top"
-              style="left: -1000vw; top: -1000vh; box-sizing: border-box;"
+              style="--arrow-x: 0px; --arrow-y: 0px; left: -1000vw; top: -1000vh; box-sizing: border-box;"
             >
               <div
                 class="ant-tooltip-arrow"
@@ -600,7 +600,7 @@ Array [
             </div>
             <span
               class="ant-avatar ant-avatar-circle ant-avatar-icon"
-              style="background-color: rgb(24, 144, 255);"
+              style="background-color: rgb(22, 119, 255);"
             >
               <span
                 aria-label="ant-design"
@@ -638,7 +638,7 @@ Array [
       class="ant-avatar ant-avatar-lg ant-avatar-circle ant-avatar-image"
     >
       <img
-        src="https://joesch.moe/api/v1/random?key=3"
+        src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=3"
       />
     </span>
     <span
@@ -665,7 +665,7 @@ Array [
     </span>
     <div
       class="ant-popover ant-zoom-big-appear ant-zoom-big-appear-prepare ant-zoom-big ant-avatar-group-popover ant-popover-placement-top"
-      style="left: -1000vw; top: -1000vh; box-sizing: border-box;"
+      style="--arrow-x: 0px; --arrow-y: 0px; left: -1000vw; top: -1000vh; box-sizing: border-box;"
     >
       <div
         class="ant-popover-arrow"
@@ -707,7 +707,7 @@ Array [
             </span>
             <div
               class="ant-tooltip ant-zoom-big-fast-appear ant-zoom-big-fast-appear-prepare ant-zoom-big-fast ant-tooltip-placement-top"
-              style="left: -1000vw; top: -1000vh; box-sizing: border-box;"
+              style="--arrow-x: 0px; --arrow-y: 0px; left: -1000vw; top: -1000vh; box-sizing: border-box;"
             >
               <div
                 class="ant-tooltip-arrow"
@@ -726,7 +726,7 @@ Array [
             </div>
             <span
               class="ant-avatar ant-avatar-lg ant-avatar-circle ant-avatar-icon"
-              style="background-color: rgb(24, 144, 255);"
+              style="background-color: rgb(22, 119, 255);"
             >
               <span
                 aria-label="ant-design"
@@ -791,7 +791,7 @@ Array [
     </span>
     <div
       class="ant-popover ant-zoom-big-appear ant-zoom-big-appear-prepare ant-zoom-big ant-avatar-group-popover ant-popover-placement-top"
-      style="left: -1000vw; top: -1000vh; box-sizing: border-box;"
+      style="--arrow-x: 0px; --arrow-y: 0px; left: -1000vw; top: -1000vh; box-sizing: border-box;"
     >
       <div
         class="ant-popover-arrow"
@@ -833,7 +833,7 @@ Array [
             </span>
             <div
               class="ant-tooltip ant-zoom-big-fast-appear ant-zoom-big-fast-appear-prepare ant-zoom-big-fast ant-tooltip-placement-top"
-              style="left: -1000vw; top: -1000vh; box-sizing: border-box;"
+              style="--arrow-x: 0px; --arrow-y: 0px; left: -1000vw; top: -1000vh; box-sizing: border-box;"
             >
               <div
                 class="ant-tooltip-arrow"
@@ -852,7 +852,7 @@ Array [
             </div>
             <span
               class="ant-avatar ant-avatar-lg ant-avatar-circle ant-avatar-icon"
-              style="background-color: rgb(24, 144, 255);"
+              style="background-color: rgb(22, 119, 255);"
             >
               <span
                 aria-label="ant-design"

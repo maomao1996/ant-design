@@ -40,7 +40,7 @@ return <Breadcrumb routes={[{ breadcrumbName: 'sample' }]} />;
 <code src="./demo/react-router.tsx" iframe="200">react-router V6</code>
 <code src="./demo/separator.tsx">Configuring the Separator</code>
 <code src="./demo/overlay.tsx">Bread crumbs with drop down menu</code>
-<code src="./demo/separator-component.tsx">Configuring the Separator</code>
+<code src="./demo/separator-component.tsx">Configuring the Separator Independently</code>
 <code src="./demo/debug-routes.tsx">Debug Routes</code>
 
 ## API
@@ -64,7 +64,8 @@ return <Breadcrumb routes={[{ breadcrumbName: 'sample' }]} />;
 | --- | --- | --- | --- | --- |
 | className | The additional css class | string | - |  |
 | dropdownProps | The dropdown props | [Dropdown](/components/dropdown) | - |  |
-| href | Target of hyperlink | string | - |  |
+| href | Target of hyperlink. Can not work with `path` | string | - |  |
+| path | Connected path. Each path will connect with prev one. Can not work with `href` | string | - |  |
 | menu | The menu props | [MenuProps](/components/menu/#api) | - | 4.24.0 |
 | onClick | Set the handler to handle click event | (e:MouseEvent) => void | - |  |
 | title | item name | ReactNode | - |  |
@@ -125,3 +126,7 @@ function itemRender(route, params, items, paths) {
 
 return <Breadcrumb itemRender={itemRender} items={items} />;
 ```
+
+## Design Token
+
+<ComponentTokenTable component="Breadcrumb"></ComponentTokenTable>

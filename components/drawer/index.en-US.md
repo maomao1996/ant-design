@@ -34,6 +34,7 @@ A Drawer is a panel that is typically overlaid on top of a page and slides in fr
 <code src="./demo/no-mask.tsx" debug>No mask</code>
 <code src="./demo/render-panel.tsx" debug>_InternalPanelDoNotUseOrYouWillBeFired</code>
 <code src="./demo/scroll-debug.tsx" debug>Scroll Debug</code>
+<code src="./demo/component-token.tsx" debug>Component Token</code>
 
 ## API
 
@@ -71,3 +72,7 @@ A Drawer is a panel that is typically overlaid on top of a page and slides in fr
 | width | Width of the Drawer dialog | string \| number | 378 |  |
 | zIndex | The `z-index` of the Drawer | number | 1000 |  |
 | onClose | Specify a callback that will be called when a user clicks mask, close button or Cancel button | function(e) | - |  |
+
+## Design Token
+
+<ComponentTokenTable component="Drawer"></ComponentTokenTable>

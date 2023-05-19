@@ -15,11 +15,11 @@ When data is in the form of dates, such as schedules, timetables, prices calenda
 ## Examples
 
 <!-- prettier-ignore -->
-<code src="./demo/basic.tsx">Basic</code>
-<code src="./demo/notice-calendar.tsx">Notice Calendar</code>
-<code src="./demo/card.tsx">Card</code>
-<code src="./demo/select.tsx">Selectable Calendar</code>
-<code src="./demo/customize-header.tsx">Customize Header</code>
+<code src="./demo/basic.tsx" clientOnly>Basic</code>
+<code src="./demo/notice-calendar.tsx" clientOnly>Notice Calendar</code>
+<code src="./demo/card.tsx" clientOnly>Card</code>
+<code src="./demo/select.tsx" clientOnly>Selectable Calendar</code>
+<code src="./demo/customize-header.tsx" clientOnly>Customize Header</code>
 
 ## API
 
@@ -56,6 +56,10 @@ When data is in the form of dates, such as schedules, timetables, prices calenda
 | onChange | Callback for when date changes | function(date: Dayjs) | - |  |
 | onPanelChange | Callback for when panel changes | function(date: Dayjs, mode: string) | - |  |
 | onSelect | Callback for when a date is selected | function(date: Dayjs） | - |  |
+
+## Design Token
+
+<ComponentTokenTable component="Calendar"></ComponentTokenTable>
 
 ## FAQ
 
